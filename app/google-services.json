@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "90592879805",
+    "firebase_url": "https://saloonadmin-b4a30.firebaseio.com",
+    "project_id": "saloonadmin-b4a30",
+    "storage_bucket": "saloonadmin-b4a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90592879805:android:d3122bd57b41eb97",
+        "android_client_info": {
+          "package_name": "mahesh.cubex.saloonadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90592879805-an3mehc7ne618vknbt4bbrep18oatqhn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mahesh.cubex.saloonadmin",
+            "certificate_hash": "d60887c0299313335cc43202acea8333dcffb0d3"
+          }
+        },
+        {
+          "client_id": "90592879805-1eg3429r2ikagie67uhi4iitbjratdhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3kvwxQMrpkJb8lmkc-fvZMZm8nTDwR6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90592879805-1eg3429r2ikagie67uhi4iitbjratdhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
