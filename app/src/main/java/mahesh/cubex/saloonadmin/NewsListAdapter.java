@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +18,6 @@ import java.util.Calendar;
 import java.util.List;
 
 
-
 public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.MyViewHolder> {
     private Context context;
     private List<ApprovalRequestPojo> cartList;
@@ -25,12 +25,14 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.MyView
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, description;
         public ImageView thumbnail;
+        public Button viewMore;
 
         public MyViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.news_title);
             description = view.findViewById(R.id.news_description);
             thumbnail = view.findViewById(R.id.thumbnail);
+            viewMore = view.findViewById(R.id.news_viewMore);
         }
     }
 
@@ -51,12 +53,21 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.MyView
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         final ApprovalRequestPojo recipe = cartList.get(position);
-        holder.title.setText(recipe.getCustomerType());
+        holder.title.setText("Account Type : " + recipe.getCustomerType().replace("_", " ").toUpperCase());
+        holder.description.setText("Account ID : " + recipe.getCustomerID());
 
 
         Glide.with(context)
                 .load(recipe.getImageUrl())
                 .into(holder.thumbnail);
+
+        holder.viewMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Constants.account = cartList.get(position);
+                context.startActivity(new Intent(context,ViewDetails.class));
+            }
+        });
 
     }
 

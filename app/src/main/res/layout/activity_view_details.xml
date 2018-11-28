@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/img_preview"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="left|center"
+            android:layout_gravity="left|center"
+            android:id="@+id/phoneNumber"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Hello World"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="left|center"
+            android:layout_gravity="left|center"
+            android:id="@+id/email"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Hello World"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="left|center"
+            android:layout_gravity="left|center"
+            android:id="@+id/city"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Hello World"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="left|center"
+            android:layout_gravity="left|center"
+            android:id="@+id/accontType"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="Hello World"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:padding="3dp"
+            android:text="Reject"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_bg"
+            android:textSize="15dp"
+            android:onClick="reject"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/news_viewMore"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/news_title"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:padding="3dp"
+            android:text="Approve"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_bg"
+            android:textSize="15dp"
+            android:onClick="approve"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
